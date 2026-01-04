@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game | CyberSolutionsOhio</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-path-prefix="../../">
+    <header>
+        <nav>
+            <a href="../../index.html" class="logo">CyberSolutionsOhio</a>
+            <form class="search-form" action="https://www.google.com/search" method="get" target="_blank">
+                <input type="text" name="q" placeholder="Search the web...">
+                <button type="submit">Search</button>
+            </form>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about.html">About Us</a></li>
+                <li><a href="../../services.html">Services</a></li>
+                <li><a href="../../apps.html">Apps</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle-button" class="cta-button">Change Theme</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Memory Game</h1>
+        <div class="game-info">
+            <p>Moves: <span id="moves">0</span></p>
+            <p>Time: <span id="timer">0</span></p>
+        </div>
+        <div id="memory-game-board" class="game-grid"></div>
+        <button id="restart-memory-game">Restart Game</button>
+    </main>
+    <script src="script.js"></script>
+    <script src="../../js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/* Shared styles for the app overlay */
+.app-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.app-overlay .cta-button {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.app-overlay .cta-button:hover {
+    background-color: var(--secondary-color);
+}

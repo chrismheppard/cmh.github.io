@@ -1,0 +1,60 @@
+/* Trippy Theme - Inspired by bioluminescent dimensions and cosmic nebulas */
+
+body.trippy-theme {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff, #00ffff);
+    background-size: 400% 400%;
+    animation: trippy-background 10s ease infinite;
+    color: #fff;
+    text-shadow: 0 0 5px #000, 0 0 10px #000;
+}
+
+@keyframes trippy-background {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.trippy-theme header {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.trippy-theme .cta-button,
+.trippy-theme .search-form button {
+    background: linear-gradient(45deg, #f8ff00, #ff00c3);
+    border: none;
+    color: #000;
+    box-shadow: 0 0 10px #ff00c3, 0 0 20px #f8ff00;
+    transition: all 0.3s ease;
+}
+
+.trippy-theme .cta-button:hover,
+.trippy-theme .search-form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff00c3, 0 0 40px #f8ff00;
+}
+
+.trippy-theme .feature-item {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+.trippy-theme .logo {
+    animation: pulse-glow 2s infinite alternate;
+}
+
+@keyframes pulse-glow {
+    from {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+    }
+    to {
+        text-shadow: 0 0 20px #ff00c3, 0 0 40px #ff00c3;
+    }
+}

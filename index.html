@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSolutionsOhio | Home</title>
+    <meta name="description" content="CyberSolutionsOhio, led by Chris Heppard, provides agile web development, cybersecurity, and cloud solutions for humans.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CyberSolutionsOhio</a>
+            <form class="search-form" action="https://www.google.com/search" method="get" target="_blank">
+                <input type="text" name="q" placeholder="Search the web...">
+                <button type="submit">Search</button>
+            </form>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="apps.html">Apps</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle-button" class="cta-button">Change Theme</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="content-card hero hero-two-column">
+                <div class="hero-left">
+                    <div class="profile-picture">
+                        <img src="img/profile.jpg" alt="A photo of Chris Heppard, the founder of CyberSolutionsOhio.">
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <h1>CyberSolutions for a Modern Ohio</h1>
+                    <p>Chris Heppard is a visionary Full-Stack Developer and Security Specialist based in Cincinnati, Ohio. With a passion for immersive web technologies and robust cyber-infrastructure, Chris founded CyberSolutions to bridge the gap between interactive 3D design and enterprise-grade security. His work transforms complex data into accessible, secure digital experiences for the modern web.</p>
+                    <a href="apps.html" class="cta-button">View Software Suite</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section features">
+            <div class="page-header">
+                <h2>Core Offerings</h2>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+            </div>
+            <div class="features-grid">
+                <article class="feature-item" data-category="web">
+                    <h3>Web Development</h3>
+                    <p>Building responsive, high-performance websites from the ground up.</p>
+                </article>
+                <article class="feature-item" data-category="security">
+                    <h3>Cybersecurity Audits</h3>
+                    <p>Identifying and mitigating vulnerabilities to protect your digital assets.</p>
+                </article>
+                <article class="feature-item" data-category="cloud">
+                    <h3>Cloud Solutions</h3>
+                    <p>Leveraging cloud infrastructure for scalability and efficiency.</p>
+                </article>
+                <article class="feature-item" data-category="web">
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and engaging user experiences.</p>
+                </article>
+                <article class="feature-item" data-category="security">
+                    <h3>Penetration Testing</h3>
+                    <p>Simulating real-world attacks to find security weaknesses.</p>
+                </article>
+                <article class="feature-item" data-category="cloud">
+                    <h3>DevOps & Automation</h3>
+                    <p>Streamlining development and deployment pipelines.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section trust-bar">
+            <div class="page-header">
+                <h2>Trusted By</h2>
+            </div>
+            <div class="content-card">
+                <div class="trust-logos">
+                    <div class="logo-placeholder">Client A</div>
+                    <div class="logo-placeholder">Client B</div>
+                    <div class="logo-placeholder">Client C</div>
+                    <div class="logo-placeholder">Client D</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="chatbot-widget">
+            <div class="chat-icon" id="chatIcon">?</div>
+            <div class="chat-window" id="chatWindow">
+                <div class="chat-header">Chat with Us!</div>
+                <div class="chat-body" id="chatBody">
+                    <div class="chat-message bot">Hello! How can I help you today?</div>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" id="chatInput" placeholder="Ask a question...">
+                    <button id="chatSendBtn">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2024 CyberSolutionsOhio Chris Heppard. All rights reserved.</p>
+            <button id="subscribeBtn" class="cta-button">Subscribe to Newsletter</button>
+            <ul class="social-links">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="newsletterModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay up to date with the latest industry news and insights.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

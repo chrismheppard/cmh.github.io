@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Solitaire | CyberSolutionsOhio</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="logo">CyberSolutionsOhio</a>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about.html">About Us</a></li>
+                <li><a href="../../services.html">Services</a></li>
+                <li><a href="../../apps.html">Apps</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle-button" class="cta-button">Change Theme</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="game-container"></div>
+        <div id="game-ui">
+            <h1>3D Solitaire</h1>
+            <div class="controls">
+                <button id="new-game-btn">New Game</button>
+                <button id="undo-btn">Undo Move</button>
+                <label>
+                    Draw:
+                    <select id="draw-style-select">
+                        <option value="1">One</option>
+                        <option value="3">Three</option>
+                    </select>
+                </label>
+            </div>
+            <div class="stats">
+                <p>Moves: <span id="move-counter">0</span></p>
+                <p>Score: <span id="score">0</span></p>
+                <p>High Score: <span id="high-score">0</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 CyberSolutionsOhio Chris Heppard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script src="../../js/ScoreManager.js"></script>
+    <script src="../../js/overlay.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

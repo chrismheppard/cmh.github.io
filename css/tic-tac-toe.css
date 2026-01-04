@@ -1,0 +1,48 @@
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: var(--navy);
+    border: 2px solid var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.cell.x::before,
+.cell.circle::before {
+    color: var(--gold);
+}
+
+.cell.x::before {
+    content: 'X';
+}
+
+.cell.circle::before {
+    content: 'O';
+}
+
+.winning-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.winning-message.show {
+    display: flex;
+}

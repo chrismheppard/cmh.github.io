@@ -1,0 +1,48 @@
+#game-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#game-ui {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 2;
+    color: var(--neon-text-color);
+    background: var(--glass-bg-color);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--glass-border-color);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px var(--glow-color);
+}
+
+#game-ui h1 {
+    margin-top: 0;
+}
+
+#game-ui .controls, #game-ui .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#game-ui button, #game-ui select {
+    background-color: var(--cta-bg-color);
+    color: var(--cta-text-color);
+    border: 1px solid var(--cta-border-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 1em;
+}
+
+#game-ui button:hover, #game-ui select:hover {
+    background-color: var(--cta-hover-bg-color);
+    box-shadow: 0 0 15px var(--cta-hover-bg-color);
+}
